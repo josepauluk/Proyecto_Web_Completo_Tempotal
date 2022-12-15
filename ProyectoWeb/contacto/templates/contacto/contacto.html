@@ -5,6 +5,20 @@
 {% block content %}
    <!-- Heading -->
 
-   <div><p style="color: white;">{{miFormulario}}</p></div>
+   <div class="contenedorFormulario">
 
+      {% if 'valido' in request.GET %}
+
+         <p style="color: white;">Informaión enviada correctamente, gracias</p>
+
+      {% endif%}
+
+      <form action="" method="POST" style="text-align: center;">
+         {% csrf_token %}
+         <table style="color: white; margin: 20px auto;">{{miFormulario.as_table}}</table>
+         <input type="submit" name="" id="" value="Enviar" style="width: 150px;">     
+      </form>
+   
+   </div>
+   
    {% endblock %}
