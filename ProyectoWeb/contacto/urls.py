@@ -4,8 +4,7 @@ from ProyectoWebApp import views
 from . import views
 
 
-urlpatterns = [
-    
+urlpatterns = [    
         
     path('', views.contacto, name='Contacto'),    
 ]
