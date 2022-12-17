@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'servicios', 
     'blog',
     'contacto',
+    'login',
+    'crispy_forms',
+    
 ]
 
 MIDDLEWARE = [
@@ -136,4 +139,7 @@ EMAIL_HOST='smtp.gmail.com'
 EMAIL_USE_TLS=True
 EMAIL_PORT=587
 EMAIL_HOST_USER= 'josepauluk@gmail.com'
-EMAIL_HOST_PASSWORD='Tobias2507741'
+EMAIL_HOST_PASSWORD='*********'
+
+
+CRISPY_TEMPLATE_PACK='bootstrap4'
