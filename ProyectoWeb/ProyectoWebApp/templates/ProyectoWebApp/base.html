@@ -32,11 +32,11 @@
 
   {% if user.is_authenticated %}
 
-    Hola {{ user.username}} &nbsp; &nbsp; <a href="{% url 'cerrar_sesion' %}"> Cerrar sesión</a>
+    Hola <span style="color: brown; text-transform: capitalize;">{{ user.username }}</span> &nbsp; &nbsp; <a href="{% url 'cerrar_sesion' %}" style="color: white;"> Cerrar sesión</a>
 
   {% else %}
 
-    <a href="#">Login</a>&nbsp; &nbsp; <a href="Login">Regístrate</a>
+    <a href="{% url 'logear' %}" style="color: white;">Login</a>&nbsp; &nbsp; <a href="{% url 'Login' %}" style="color: white;">Regístrate</a>
 
   {% endif %}
 
